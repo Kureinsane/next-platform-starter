@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden; /* Taşmayı engelle */
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Sağ tarafa hizala */
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+}
+
+.profile-icon {
+    /* sağ üst logolar arası boşluk */
+    margin-left: 18px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.top-right a:hover {
+    text-decoration: underline;
+}
+
+.apps-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.container {
+    text-align: center;
+    width: 100%; /* Ekrana sığması için genişlik ayarı */
+    overflow: hidden; /* Taşmayı engelle */
+    position: relative;
+    top: -100px;
+}
+.container2 {
+    text-align: left; /* Türkiye metnini sola hizala */
+    padding-left: 20px; /* Sol kenardan biraz boşluk bırak */
+}
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    width: 500px;
+    max-width: 100%; /* Ekrana sığması için maksimum genişlik */
+    padding: 11px 11px 11px 35px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+    background: url('search.JPG') no-repeat 8px center; /* Arka plan resmi ekle */
+    background-size: 31px 31px; /* Arka plan resminin boyutunu ayarla */
+}
+
+.search-input:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #f1f3f4;
+    border: 1px solid #dadce0;
+}
+
+.horizontal-line {
+    height: 1px;
+    background-color: rgba(65, 65, 65, 0.185);
+    width: 100%;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bot-right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    position: fixed; /* Konumu sabitle */
+    bottom: 10px; /* Sayfanın altından 10px yukarıda */
+    right: 20px; /* Sayfanın sağından 20px içeride */
+    
+}
+
+.bot-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    
+}
+.bot-right a:hover {
+    text-decoration: underline;
+}
+
+.bot-left {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    position: fixed; /* Konumu sabitle */
+    bottom: 10px; 
+    left: 20px; 
+}
+.bot-left a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.bot-left a:hover {
+    text-decoration: underline;
+}
+.sign {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    position: relative;
+    color: #92073d;
+}
